@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(lightgray, gray);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller.FXMLInterfaceRankingController">
+   <children>
+      <Label layoutX="219.0" layoutY="20.0" text="Ranking" textFill="#973c00">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listaRanking" layoutX="77.0" layoutY="87.0" prefHeight="257.0" prefWidth="447.0" />
+      <Button fx:id="searchVariante" layoutX="261.0" layoutY="352.0" mnemonicParsing="false" onAction="#ordernarVariante" style="-fx-background-color: black; -fx-border-radius: 2; -fx-border-color: white;" text="Variante" textFill="#bfbdbd" />
+      <Button fx:id="searchPontuacao" layoutX="346.0" layoutY="352.0" mnemonicParsing="false" onAction="#ordenarPontuacao" style="-fx-background-color: black; -fx-border-radius: 2; -fx-border-color: white;" text="Pontuação" textFill="#bfbdbd" />
+      <Label layoutX="158.0" layoutY="355.0" text="Ordenar por : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

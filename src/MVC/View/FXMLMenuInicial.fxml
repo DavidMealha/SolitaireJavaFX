@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(lightgray, gray);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller.FXMLMenuInicialController">
+   <children>
+      <Label layoutX="69.0" layoutY="173.0" text="Username:" />
+      <TextField fx:id="textFieldUsername" layoutX="147.0" layoutY="169.0" />
+      <ImageView fitHeight="58.0" fitWidth="258.0" layoutX="385.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/4naipes.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginButton" layoutX="147.0" layoutY="211.0" mnemonicParsing="false" onAction="#loginPlayer" text="Entrar" />
+      <Label layoutX="132.0" layoutY="49.0" prefHeight="58.0" prefWidth="183.0" text="Solitário">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5190476190476191" endY="0.7380952380952381" startX="0.4666666666666667">
+               <stops>
+                  <Stop color="#0a0600" />
+                  <Stop color="#0a0600" offset="0.007662835249042145" />
+                  <Stop color="#ff0000e3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="registoButton" layoutX="230.0" layoutY="211.0" mnemonicParsing="false" onAction="#adicionaPlayer" text="Registar" />
+      <Button fx:id="verHistoricoButton" layoutX="223.0" layoutY="290.0" mnemonicParsing="false" onAction="#seeHistorico" prefHeight="25.0" prefWidth="88.0" text="Ver historico" />
+      <Button fx:id="verRankingButton" layoutX="130.0" layoutY="290.0" mnemonicParsing="false" onAction="#seeRanking" prefHeight="25.0" prefWidth="83.0" text="Ver ranking" />
+      <Separator layoutX="347.0" layoutY="132.0" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: darkgrey;" />
+      <Button fx:id="newGameButton" layoutX="466.0" layoutY="312.0" mnemonicParsing="false" onAction="#novoJogo" prefHeight="25.0" prefWidth="83.0" text="Novo jogo" />
+      <Label layoutX="466.0" layoutY="134.0" text="Opções de jogo" />
+      <ComboBox fx:id="pontuacaoOption" layoutX="517.0" layoutY="169.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="407.0" layoutY="173.0" text="Tipo pontuação" />
+      <Label layoutX="405.0" layoutY="215.0" text="Variante de jogo" />
+      <ComboBox fx:id="varianteOption" layoutX="517.0" layoutY="212.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="405.0" layoutY="260.0" text="Opção Logger" />
+      <ComboBox fx:id="loggerOption" layoutX="517.0" layoutY="256.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="253.0" layoutY="356.0" prefHeight="17.0" prefWidth="194.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

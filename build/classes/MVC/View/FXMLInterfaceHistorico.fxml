@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(lightgray, gray);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Controller.FXMLInterfaceHistoricoController">
+   <children>
+      <Label fx:id="warning" contentDisplay="CENTER" layoutX="161.0" layoutY="369.0" prefHeight="17.0" prefWidth="342.0" textAlignment="CENTER" textFill="#ff0505">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ListView fx:id="listaHistorico" layoutX="152.0" layoutY="151.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="procurarButton" layoutX="410.0" layoutY="96.0" mnemonicParsing="false" onAction="#procurarHistorico" text="Procurar" />
+      <TextField fx:id="textFieldName" layoutX="218.0" layoutY="96.0" />
+      <Label layoutX="103.0" layoutY="100.0" text="Nome do jogador:" />
+      <Button layoutX="382.0" layoutY="165.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Diário" />
+      <Button layoutX="384.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Ultimos dias" />
+      <TextField layoutX="434.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label layoutX="384.0" layoutY="204.0" text="Nr dias :" />
+      <Button layoutX="384.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Mês corrente" />
+      <Label layoutX="209.0" layoutY="27.0" prefHeight="58.0" prefWidth="183.0" text="Histórico" textFill="#973c00">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
